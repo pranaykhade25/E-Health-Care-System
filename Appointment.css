@@ -1,0 +1,102 @@
+@charset "ISO-8859-1";
+
+
+
+/* Bckpage navbar */
+.container {
+  position: absolute;
+  margin: 0px;
+  width: auto;
+}
+
+/*  */
+.backnavbar {
+  overflow: hidden;
+  
+}
+
+/* Navbar links */
+.backnavbar a {
+  float: left;
+  color:Black;
+  text-align: center;
+  padding: 0px 7px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.apt-hr{
+	height:2px;
+	margin:5px 0 50px 0;
+	background:rgba(114,114,25,.9);
+}
+
+th{
+	
+	text-align:left;
+	font-size:22px;
+}
+table{
+	width:100%;
+	height:30%;
+	background-color:rgba(40,57,101,.4);
+	box-shadow:0 12p8c8c8x 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+h4{
+	font-size: 18px;
+    color:white;
+    background:#009900;
+	border:1px #1161ee;
+	padding:5px 5px;
+    border-radius: 4px;
+    position:absolute;
+    top:81.5%;
+    left:10%;
+    transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+	
+}
+td{
+	color:black;
+	
+}
+td:hover{
+	
+	background:white;
+
+}
+input[type="submit"]{
+      
+      font-size: 16px;
+      color: white;
+      background:#1161ee;
+	  border:1px #009900;
+	  padding:5px 5px;
+	  border-radius: 2px;
+}
+
+input[type="submit"]:hover{
+       cursor: pointer;
+       background:#009900;
+}
+ 
+ input[type="reset"]{
+      
+      font-size: 18px;
+      color: white;
+      background:#009900;
+	  border:1px #1161ee;
+	  padding:7px 8px;
+	  border-radius: 2px;
+	  position:absolute;
+  	  top: 85%;
+      left:20%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+}
+
+input[type="reset"]:hover,h4:hover{
+       cursor: pointer;
+       background:#1161ee;
+}
+ 

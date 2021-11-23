@@ -1,0 +1,102 @@
+@charset "ISO-8859-1";
+
+
+.pat-img {
+
+  background-image: url('Images/Patient.jpg');
+  min-height:750px;
+  
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+/* Bckpage navbar */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/*  */
+.backnavbar {
+  overflow: hidden;
+  
+}
+
+/* Navbar links */
+.backnavbar a {
+  float: left;
+  color:rgba(40,57,101,.9);
+  text-align: center;
+  padding: 7px 7px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.pat-hr{
+	height:2px;
+	margin:9px 0 50px 0;
+	background:rgba(114,114,25,.9);
+}
+
+*{
+     font-family: sans-serif;
+     box-sizing: border-box;
+     margin: 5;
+     padding: 0;
+}
+
+ 
+.form-wrapper{
+     position: absolute;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border-radius:0px;
+     width: 300px;
+     padding:20px;
+     box-shadow:0 12p8c8c8x 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+     background:rgba(40,57,101,.2);
+}
+ 
+ .form-wrapper a{
+top:10;
+ color:white;
+ }
+h1{
+     color: white;
+     text-align: center;
+     margin-bottom: 20px;
+     font-size:27px;
+}
+ 
+label{
+     color: black;
+     font-size: 18px;
+}
+ 
+input{
+     width: 100%;
+     padding: 10px;
+     margin: 10px 0px 10px 0;
+     background:rgba(255,255,255,.5);
+     border: 1px rgba(255,255,255,.5);
+     border-radius: 0px;
+     color: #ffffff;
+     display: inline-block;
+     font-size:18px;
+}
+             
+ input[type="submit"]{
+      font-size: 20px;
+      color: white;
+      background:#1161ee;
+}
+ 
+input[type="submit"]:hover{
+       cursor: pointer;
+       background:#009900;
+}

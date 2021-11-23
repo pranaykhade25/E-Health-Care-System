@@ -1,0 +1,125 @@
+@charset "ISO-8859-1";
+
+
+.bg-img {
+
+  background-image: url('MedexLogo.png');
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+}
+/* Bckpage navbar */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/*  */
+.backnavbar {
+  overflow: hidden;
+  
+}
+
+/* Navbar links */
+.backnavbar a {
+  float: left;
+  color:rgba(40,57,101,.9);
+  text-align: center;
+  padding: 7px 7px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.ad-hr{
+	height:2px;
+	margin:9px 0 50px 0;
+	background:rgba(114,114,25,.9);
+}
+
+ /* Appointment Button */
+.adoct .btn {
+  position:absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:#009900;
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.adoct .btn:hover {
+  background-color:DodgerBlue;
+}
+
+
+.vapt .btn {
+  position:absolute;
+  top: 40%;
+  right:14%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:DodgerBlue;
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.vapt .btn:hover {
+  background-color:#009900;;
+}
+
+ /* Appointment Button */
+.vpat .btn {
+  position:absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:#009900;
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.vpat .btn:hover {
+  background-color:DodgerBlue;
+}
+
+
+.vdoct .btn {
+  position:absolute;
+  top: 70%;
+  right:18%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:DodgerBlue;
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.vdoct .btn:hover {
+  background-color:#009900;;
+}
+
+ 

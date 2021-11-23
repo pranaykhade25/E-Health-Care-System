@@ -1,0 +1,429 @@
+@charset "ISO-8859-1";
+
+* {
+	
+	box-sizing: border-box;
+}
+
+body, html {
+  height: 100vh;
+  line-height:1.6;
+}
+.Homecontainer{
+	
+	width:100%;
+	height:100%;
+	overflow-y:scroll;
+	scroll-behavior: smooth;
+	scroll-snap-type:y mandantory;
+	speed:800;
+}
+/*background color */
+.topnav {
+	
+ 	background-color: DodgerBlue;
+  	overflow: hidden;
+  	position:fixed;
+  	top:0;
+ 	z-index:1;
+	margin:0;
+    padding:0;
+    display:flex;
+  	width:100%;
+  	height:60px;
+  	
+}
+
+
+/* Style the links */
+.topnav a {
+	display:flex;
+  	float: left;
+  	color: #f2f2f2;
+ 	 text-align: center;
+ 	 padding: 16px 25px;
+  	text-decoration: none;
+  	font-size: 16px;
+}
+
+/* hover & link color */
+.topnav a:hover {
+  background-color:white;
+  color: DodgerBlue;
+}
+
+/* Active Link color */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+/* Bg-Img */
+/*.bg-img {
+
+  background-image: url('Images/MediPlus.jpg');
+  
+  min-height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}*/
+
+
+/* Appointment Button */
+.BookApt .btn {
+  position:absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:#009900;
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration:none
+}
+
+.BookApt .btn:hover {
+  background-color:DodgerBlue;
+}
+
+.MediPlus {
+	padding-top:40px;
+ 	font-size: 21px;
+  	text-align: right;
+ 	padding-right:77px;
+ 	color: #009900;
+  	animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #04AA6D, 0 0 5px #04AA6D,  0 0 10px DodgerBlue, 0 0 10px DodgerBlue;
+  }
+  to {
+    text-shadow: 0 0 0px #04AA6D, 0 0 5px #04AA6D , 0 0 10px DodgerBlue, 0 0 px DodgerBlue;
+  color:  #0066cc;
+  padding-left: 20px;
+  padding-right:30px;
+}
+}
+section{
+	display:flex;
+	flex-direction:column;
+	scroll-snap-align: center;
+}
+section#MediPlusHome{
+	
+  background-image: url('Images/MedexHome.jpg');
+  min-height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+}
+/* ----------------------About Section------------------*/
+
+section .About{
+	margin:0;
+	color:#6a6f8c;
+	
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+section .about-img {
+
+  background-image: url('Images/About.jpg');
+	min-height:265px;
+  
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+section .abt {
+  
+  
+  font-size:20px;
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+}
+
+
+/* ----------------------Departments Section------------------*/
+
+ * {box-sizing: border-box;}
+section .Departments {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color:Black;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/7 etc) */
+.numbertext {
+  color:Black;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+}
+
+
+  
+  
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* ----------------------Contact Section------------------*/
+
+section .Contact {
+  background-color:rgba(40,57,101,.4);
+  padding: 20px;
+  font-family: Arial;
+}
+
+
+h4{
+	text-align:center;
+	
+}
+h5{
+	text-align:center;
+	
+}
+.row {
+  margin: 7px -7px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 55px;
+}
+
+/* Create three equal columns*/
+.column {
+  float: left;
+  width: 33.33%;
+ }
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.site-footer
+{
+  background-color:Dodgerblue;
+  padding:4px 0 20px;
+  font-size:14px;
+  line-height:2px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:white;
+  opacity:0.5
+}
+
+.site-footer a
+{
+  color:black;
+}
+.site-footer a:hover
+{
+  color:black;
+  text-decoration:none;
+}
+
+
+
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:20px;
+  color:black;
+}
+
+
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb5
+}
+.social-icons a.twitter:hover
+{
+  background-color:#55ACEE;
+}.social-icons a.github:hover
+{
+  background-color:#20bb33
+}
+.social-icons a.instagram:hover
+{
+  background-color:#8a3ab9
+}
